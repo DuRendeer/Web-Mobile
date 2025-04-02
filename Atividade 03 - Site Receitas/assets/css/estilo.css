@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+}
+.titulo{
+  background-image: url('https://morar.com.br/wp-content/uploads/2020/08/Receitas_Rapidas_Morar_Construtora.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.titulo h1{
+  margin: 0;
+  color: #171414;
+  font-size: 58px;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+
+}
+
+
+h1::before,
+h1::after {
+  content: '🍪';
+  margin: 0 0.5rem;
+  color: #ff7f50;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: #fffaf0;
+  border: 2px solid #f0e5d8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px #140e0e;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px #140e0e;
+}
+
+.item::before {
+  content: "🍴";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.2rem;
+}
+
+.item::after {
+  content: "Rapidin";
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9rem;
+  color: #ff7f50;
+}
+
+.item h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.item:nth-child(3) {
+  border-color: #ffa07a;
+  background-color: #fff5f0;
+}
+
+footer {
+background-color: #140e0e;
+color: #fff;
+text-align: center;
+padding: 10px;
+margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
