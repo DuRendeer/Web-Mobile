@@ -58,23 +58,5 @@
         </div>
     </div>
     
-    <footer>
-
-    </footer>
-    
-    <script>
-        document.querySelector('.search-box button').addEventListener('click', function() {
-            const searchTerm = document.querySelector('.search-box input').value;
-            if (searchTerm) {
-                alert('Procurando por: ' + searchTerm + '\nEsta é apenas uma demonstração.');
-            }
-        });
-        
-        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                document.querySelector('.search-box button').click();
-            }
-        });
-    </script>
 </body>
 </html>
