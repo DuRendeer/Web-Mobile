@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Inscreva-se</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo3.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="spotify-logo">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" width="40" height="40" alt="Spotify">
+        </div>
+        <h1>Se inscreva e comece a curtir</h1>
+        
+        <form>
+            <label for="email">Endereço de e-mail</label>
+            <input type="email" id="email" placeholder="nome@dominio.com" required>
+            
+            <div class="phone-option">
+                <a href="#">Usar número de telefone.</a>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Avançar</button>
+        </form>
+        
+        <div class="divider">
+            <span class="divider-text">ou</span>
+        </div>
+        
+        <button class="btn btn-social">
+            <img src="https://logopng.com.br/logos/google-37.png"  width="24" height="24">
+            Inscrever-se com o Google
+        </button>
+        
+        <button class="btn btn-social">
+            <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png"  width="24" height="24">
+            Inscrever-se com o Facebook
+        </button>
+        
+        <button class="btn btn-social">
+            <img src="https://cdn-icons-png.flaticon.com/512/0/747.png"  width="24" height="24">
+            Criar conta com a Apple
+        </button>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulário enviado! Esta é apenas uma demonstração.');
+        });
+    </script>
+</body>
+</html>

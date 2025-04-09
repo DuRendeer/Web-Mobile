@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Central de Ajuda</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo4.css">
+</head>
+<body>
+    <header>
+      <div class="spotify-logo">
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" width="40" height="40" alt="Spotify">
+        </div>
+    </header>
+    
+    <div class="hero">
+        <h1>Como podemos ajudar?</h1>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar">
+                <button>Buscar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categories">
+        <div class="category-card">
+            <h2>Conta e Pagamento</h2>
+            <ul>
+                <li><a href="#">Gerenciar minha conta</a></li>
+                <li><a href="#">Opções de pagamento</a></li>
+                <li><a href="#">Planos disponíveis</a></li>
+                <li><a href="#">Resolver problemas de cobrança</a></li>
+                <li><a href="#">Recuperar senha</a></li>
+            </ul>
+        </div>
+        
+        <div class="category-card">
+            <h2>Usando o Spotify</h2>
+            <ul>
+                <li><a href="#">Começando</a></li>
+                <li><a href="#">Recursos do aplicativo</a></li>
+                <li><a href="#">Playlists e bibliotecas</a></li>
+                <li><a href="#">Podcasts e audiolivros</a></li>
+                <li><a href="#">Spotify Connect</a></li>
+            </ul>
+        </div>
+        
+        <div class="category-card">
+            <h2>Solução de Problemas</h2>
+            <ul>
+                <li><a href="#">Problemas de conexão</a></li>
+                <li><a href="#">Problemas de reprodução</a></li>
+                <li><a href="#">Problemas de áudio</a></li>
+                <li><a href="#">Erro no aplicativo</a></li>
+                <li><a href="#">Atualizações</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+
+    </footer>
+    
+    <script>
+        document.querySelector('.search-box button').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-box input').value;
+            if (searchTerm) {
+                alert('Procurando por: ' + searchTerm + '\nEsta é apenas uma demonstração.');
+            }
+        });
+        
+        document.querySelector('.search-box input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-box button').click();
+            }
+        });
+    </script>
+</body>
+</html>
