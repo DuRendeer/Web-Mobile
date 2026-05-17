@@ -1,0 +1,39 @@
+# dependências
+node_modules/
+.pnp
+.pnp.js
+
+# builds
+dist/
+build/
+.next/
+
+# banco de dados local
+*.db
+*.db-shm
+*.db-wal
+
+# variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# prisma client gerado
+src/generated/
+
+# sistema operacional
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# testes
+coverage/
