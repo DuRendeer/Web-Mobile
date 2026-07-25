@@ -1,0 +1,119 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+
+.login-container {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    width: 450px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.spotify-logo {
+    margin-bottom: 20px;
+}
+
+.spotify-logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.login-button {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 14px 0;
+    border-radius: 500px;
+    border: 1px solid #878787;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.login-button img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.divider {
+    border-top: 1px solid #2a2a2a;
+    margin: 30px 0;
+}
+
+.form-group {
+    text-align: left;
+    margin: 15px auto;
+    max-width: 350px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #878787;
+    background-color: #121212;
+    color: white;
+    box-sizing: border-box;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.olho-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #878787;
+}
+
+.submit-button {
+    background-color: #1DB954;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.forgot-password {
+    margin-top: 20px;
+    display: block;
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}

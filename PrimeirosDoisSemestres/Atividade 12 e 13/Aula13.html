@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meia Boca - Pra quem pisa diferente</title>
+    <link rel="stylesheet" href="./estilo13.css"/>
+    <script src="script13.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Meia Boca</h1>
+                <span class="slogan">Pra quem pisa diferente</span>
+            </div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 3h1l3.6 7.59-1.35 2.44C4.52 15.37 6.48 17 8 17h11v-2H8l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.67-1.43c-.16-.35-.52-.57-.9-.57H1v2zm16 15c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <span class="cart-count" id="cartCount">0</span>
+                <div class="cart-dropdown" id="cartDropdown">
+                    <div id="cartItems">
+                        <div class="empty-cart">Seu carrinho está vazio</div>
+                    </div>
+                    <div class="cart-summary">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span id="cartTotal">R$ 0,00</span>
+                        </div>
+                        <button class="checkout-btn" onclick="checkout()">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Meias que combinam com sua personalidade!</h2>
+        <p>Descubra meias divertidas e únicas que expressam quem você realmente é. Estampas exclusivas para cada ocasião.</p>
+        <button class="cta-button" onclick="scrollToProducts()">Ver Coleção</button>
+    </section>
+
+    <section class="products" id="products">
+        <h2 class="section-title">Nossas Meias</h2>
+        <div class="product-grid" id="productGrid">
+        </div>
+    </section>
+
+    <div class="message" id="message"></div>
+
+    <footer>
+        &copy; 2025 Meia Boca - Todos os direitos reservados
+    </footer>
+
+</body>
+</html>
